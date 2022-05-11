@@ -1,5 +1,6 @@
 from item import Item
 from phone import Phone
+from keyboard import Keyboard
 
 #Test your code here
 
@@ -15,4 +16,6 @@ from phone import Phone
 # print(Item.all)
 # print(Phone.all)
 
+item1 = Keyboard("mechKeyboard", 100, 15)
 
+print(item1.name)
