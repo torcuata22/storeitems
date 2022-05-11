@@ -1,5 +1,7 @@
 from item import Item
-# from phone import Phone
+from phone import Phone
+
+#Test your code here
 
 # Item.instantiate_from_csv       
         
@@ -13,6 +15,4 @@ from item import Item
 # print(Item.all)
 # print(Phone.all)
 
-item1 = Item("My Item", 750)
-item1.name = "Other ItemSSSSSS"
-print(item1.name)
+

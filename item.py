@@ -10,11 +10,21 @@ class Item:
         assert quantity >= 0, f"Quantity {quantity} cannot be less than zero"
         #assign to self: 
         self.__name = name
-        self.price = price
+        self.__price = price
         self.quantity = quantity
         #append instances to list:
         Item.all.append(self)
     
+    @property
+    def price(self):
+        return self.__price
+
+    def apply_discount(self):
+        self.__price = self.__price * self.pay_rate
+
+    def apply_increment(self, increment_value):
+        self.__price = self.__price + self.__price * increment_value   
+        
     @property
     def name(self):
         return self.__name
@@ -27,10 +37,8 @@ class Item:
     
         
     def calculate_total_price(self):
-        return self.price * self.quantity
+        return self.__price * self.quantity
     
-    def apply_discount(self):
-        self.price = self.price * self.pay_rate
     
     @classmethod
     def instantiate_from_csv(cls):
@@ -58,3 +66,5 @@ class Item:
     
     def __repr__(self):
         return f"{self.__class__.__name__}('{self.name}', '{self.price}', '{self.quantity}')"
+    
+    
