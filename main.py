@@ -18,17 +18,7 @@ class Item:
 
 
 
-#item1 = Item("Phone" ,  100, 5)
-# item2 = Item("Laptop" ,  1000, 3 )
-# print(item1.pay_rate)
-#print(Item.__dict__)
-#print(item1.__dict__)
-#item1.apply_discount()
-#print(item1.price)
-item2 = Item("Laptop", 1000, 3)
-item2.pay_rate = 0.7
-item2.apply_discount()
-print(item2.price)
+
 
 
 
