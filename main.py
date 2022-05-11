@@ -14,5 +14,5 @@ from item import Item
 # print(Phone.all)
 
 item1 = Item("My Item", 750)
-item1.name = "Other Item"
+item1.name = "Other ItemSSSSSS"
 print(item1.name)

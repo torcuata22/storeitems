@@ -21,6 +21,8 @@ class Item:
     
     @name.setter
     def name(self, value):
+        if len(value) >10:
+            raise Exception ("The name is too long!")
         self.__name = value
     
         
